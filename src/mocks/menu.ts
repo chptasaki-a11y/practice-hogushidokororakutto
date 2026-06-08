@@ -1,0 +1,71 @@
+export const popularMenus = [
+  {
+    id: 1,
+    name: 'もみほぐし60分',
+    duration: '60分',
+    price: 4000,
+    description: '全身の凝りをじっくりとほぐす、当店一番人気のスタンダードコース。肩・首・腰を中心に、お客様のお悩みに合わせて施術いたします。',
+    imageQuery: 'Japanese%20massage%20therapy%20room%20with%20soft%20tatami%20mat%2C%20warm%20indirect%20lighting%2C%20cream%20colored%20linen%2C%20minimal%20zen%20aesthetic%2C%20clean%20and%20serene%20atmosphere%2C%20professional%20wellness%20spa%20interior%2C%20soft%20focus%20photography%20with%20natural%20textures',
+    imageSeq: 'menu-massage-60',
+  },
+  {
+    id: 2,
+    name: 'もみほぐし90分',
+    duration: '90分',
+    price: 5900,
+    description: '60分では物足りない方に。全身くまなく丁寧にほぐし、深いリラクゼーションへと導きます。時間をかけて徹底的にケア。',
+    imageQuery: 'Japanese%20wellness%20spa%20treatment%20room%20with%20wooden%20accents%2C%20soft%20ambient%20lighting%2C%20cream%20and%20beige%20tones%2C%20aromatherapy%20diffuser%2C%20peaceful%20healing%20space%2C%20professional%20massage%20setting%2C%20warm%20organic%20textures',
+    imageSeq: 'menu-massage-90',
+  },
+  {
+    id: 3,
+    name: 'ヘッドケア45分',
+    duration: '45分',
+    price: 5000,
+    description: '頭皮と首筋を中心とした集中ケア。目の疲れや頭の重だるさをスッキリ解消。デスクワークが多い方に特におすすめです。',
+    imageQuery: 'Japanese%20head%20spa%20treatment%20room%2C%20soft%20cream%20colored%20linens%2C%20aromatherapy%20oils%2C%20gentle%20candle%20light%2C%20serene%20wellness%20environment%2C%20minimal%20decor%2C%20calming%20atmosphere%2C%20professional%20beauty%20spa%20interior',
+    imageSeq: 'menu-head-45',
+  },
+  {
+    id: 4,
+    name: 'リフレクソロジー30分',
+    duration: '30分',
+    price: 3300,
+    description: '足裏の反射区を刺激し、全身のバランスを整えるショートコース。お忙しい方の隙間時間にぴったりの癒しです。',
+    imageQuery: 'Japanese%20foot%20reflexology%20treatment%20room%2C%20warm%20beige%20interior%2C%20soft%20towels%2C%20comfortable%20reclining%20chair%2C%20zen%20minimalist%20design%2C%20indirect%20lighting%2C%20peaceful%20healing%20atmosphere%2C%20clean%20professional%20spa',
+    imageSeq: 'menu-reflex-30',
+  },
+  {
+    id: 5,
+    name: 'リフレクソロジー60分',
+    duration: '60分',
+    price: 5000,
+    description: '足裏からふくらはぎまで、たっぷり60分かけて丁寧にケア。冷え性やむくみが気になる方に。心までほぐれる極上の時間です。',
+    imageQuery: 'luxury%20Japanese%20foot%20reflexology%20spa%2C%20warm%20cream%20and%20beige%20interior%2C%20aromatherapy%20candles%2C%20soft%20linen%20textures%2C%20peaceful%20zen%20atmosphere%2C%20professional%20wellness%20space%2C%20minimal%20elegant%20decor%2C%20calming%20ambient%20light',
+    imageSeq: 'menu-reflex-60',
+  },
+];
+
+export const interiorImages = [
+  {
+    id: 1,
+    title: '施術スペース',
+    description: '落ち着いた和の空間で、ゆったりと施術を受けていただけます。',
+    imageQuery: 'Japanese%20massage%20treatment%20room%20with%20tatami%20and%20cream%20linens%2C%20soft%20indirect%20lighting%2C%20wooden%20sliding%20doors%2C%20minimal%20zen%20aesthetic%2C%20warm%20beige%20tones%2C%20serene%20professional%20spa%20interior%2C%20clean%20and%20peaceful%20atmosphere',
+    imageSeq: 'interior-treatment',
+  },
+  {
+    id: 2,
+    title: 'リラックススペース',
+    description: '施術前後にゆっくりお過ごしいただける、くつろぎの空間です。',
+    imageQuery: 'cozy%20Japanese%20relaxation%20lounge%20with%20floor%20cushions%2C%20warm%20lighting%2C%20indoor%20plants%2C%20cream%20and%20wood%20tones%2C%20minimal%20zen%20decor%2C%20peaceful%20reading%20corner%2C%20soft%20textures%2C%20calming%20wellness%20space',
+    imageSeq: 'interior-relax',
+  },
+  {
+    id: 3,
+    title: '受付・玄関',
+    description: '温かみのあるお出迎え。和モダンな玄関で皆様をお迎えします。',
+    imageQuery: 'Japanese%20wellness%20spa%20entrance%20with%20noren%20curtain%2C%20wooden%20reception%20desk%2C%20warm%20indirect%20lighting%2C%20minimal%20zen%20aesthetic%2C%20cream%20walls%2C%20clean%20and%20inviting%20atmosphere%2C%20professional%20storefront',
+    imageSeq: 'interior-entrance',
+  },
+];

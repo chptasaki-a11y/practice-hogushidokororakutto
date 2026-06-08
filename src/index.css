@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Background: warm tropical cream → golden yellow gradient base */
+  --background-50: 0.97 0.04 84;
+  --background-100: 0.94 0.07 82;
+  --background-200: 0.90 0.09 80;
+  --background-300: 0.86 0.11 78;
+  --background-400: 0.81 0.13 76;
+  --background-500: 0.76 0.15 74;
+  --background-600: 0.69 0.14 73;
+  --background-700: 0.61 0.12 71;
+  --background-800: 0.52 0.10 69;
+  --background-900: 0.42 0.08 66;
+  --background-950: 0.30 0.06 62;
+
+  /* Primary: golden yellow #f8b500 */
+  --primary-50: 0.97 0.06 80;
+  --primary-100: 0.93 0.10 78;
+  --primary-200: 0.88 0.13 76;
+  --primary-300: 0.84 0.16 74;
+  --primary-400: 0.80 0.18 72;
+  --primary-500: 0.76 0.19 80;
+  --primary-600: 0.69 0.17 78;
+  --primary-700: 0.60 0.15 76;
+  --primary-800: 0.50 0.13 74;
+  --primary-900: 0.40 0.10 72;
+  --primary-950: 0.28 0.07 70;
+
+  /* Accent: tropical coral/pink */
+  --accent-50: 0.96 0.03 16;
+  --accent-100: 0.91 0.06 15;
+  --accent-200: 0.84 0.09 14;
+  --accent-300: 0.76 0.12 13;
+  --accent-400: 0.69 0.14 12;
+  --accent-500: 0.60 0.16 10;
+  --accent-600: 0.53 0.14 9;
+  --accent-700: 0.45 0.12 8;
+  --accent-800: 0.38 0.10 7;
+  --accent-900: 0.30 0.08 6;
+  --accent-950: 0.21 0.06 5;
+
+  /* Secondary: tropical green (monstera/palm vibes) */
+  --secondary-50: 0.96 0.03 158;
+  --secondary-100: 0.91 0.06 155;
+  --secondary-200: 0.84 0.08 152;
+  --secondary-300: 0.76 0.10 149;
+  --secondary-400: 0.67 0.12 146;
+  --secondary-500: 0.55 0.12 143;
+  --secondary-600: 0.48 0.11 140;
+  --secondary-700: 0.40 0.09 138;
+  --secondary-800: 0.33 0.07 135;
+  --secondary-900: 0.25 0.05 132;
+  --secondary-950: 0.18 0.03 130;
+
+  /* Foreground: deep warm brown #2e0800 */
+  --foreground-50: 0.94 0.03 30;
+  --foreground-100: 0.87 0.04 28;
+  --foreground-200: 0.77 0.05 26;
+  --foreground-300: 0.65 0.06 24;
+  --foreground-400: 0.52 0.07 22;
+  --foreground-500: 0.40 0.07 20;
+  --foreground-600: 0.33 0.07 18;
+  --foreground-700: 0.26 0.06 16;
+  --foreground-800: 0.20 0.06 15;
+  --foreground-900: 0.15 0.05 14;
+  --foreground-950: 0.10 0.06 20;
+
+  /* Typography */
+  --font-heading: 'Noto Serif JP', serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+  --font-label: 'Noto Sans JP', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+}
+
+body {
+  background-color: oklch(var(--background-50));
+  color: oklch(var(--foreground-800));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.hero-text-glow {
+  text-shadow:
+    0 0 8px oklch(var(--primary-600) / 0.9),
+    0 0 18px oklch(var(--primary-500) / 0.7),
+    0 0 32px oklch(var(--primary-700) / 0.5);
+}
+
+/* Scroll animation base */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-100 { transition-delay: 0.1s; }
+.reveal-delay-200 { transition-delay: 0.2s; }
+.reveal-delay-300 { transition-delay: 0.3s; }
+.reveal-delay-400 { transition-delay: 0.4s; }
+.reveal-delay-500 { transition-delay: 0.5s; }
+.reveal-delay-600 { transition-delay: 0.6s; }
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Name reveal animation */
+@keyframes nameReveal {
+  0% { opacity: 0; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.name-reveal-animation {
+  animation: nameReveal 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.content-fade-in {
+  animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Decorative line */
+.decorative-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, oklch(var(--primary-300) / 0.5), transparent);
+}
+
+.decorative-line-vertical {
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, oklch(var(--accent-300) / 0.5), transparent);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(var(--background-100));
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(var(--primary-300) / 0.5);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(var(--primary-400) / 0.6);
+}
+
+/* Hawaiian decorative elements */
+.palm-divider {
+  position: relative;
+}
+
+.palm-divider::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, transparent, oklch(var(--secondary-400) / 0.4), oklch(var(--primary-400) / 0.5), oklch(var(--secondary-400) / 0.4), transparent);
+}
+
+.tropical-glow {
+  box-shadow: 0 0 60px oklch(var(--primary-400) / 0.15);
+}

@@ -1,6 +1,6 @@
   import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-  import spHero from '../../assets/use/sp-hero.png';
-import tabHero from '../../assets/use/tab-hero.png';
+  import spHero from '../../../assets/use/sp-hero.png';
+import tabHero from '../../../assets/use/tab-hero.png';
 
 export default function HeroSection() {
   const { ref, isVisible } = useScrollAnimation(0.1);

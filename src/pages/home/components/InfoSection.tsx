@@ -1,6 +1,6 @@
 
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import gaikan2 from '../../assets/use/gaikan2.jpg';
+import gaikan2 from '../../../assets/use/gaikan2.jpg';
 
 export default function InfoSection() {
   const imageAnim = useScrollAnimation(0.1);

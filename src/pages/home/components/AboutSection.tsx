@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import about from '../assets/ほぐし処らくっと素材/使う素材/about.jpg';
+import about from '../../../assets/use/about.jpg';
 
 export default function AboutSection() {
   const { ref, isVisible } = useScrollAnimation(0.15);

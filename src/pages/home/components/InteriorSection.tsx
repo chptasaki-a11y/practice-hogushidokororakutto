@@ -1,9 +1,9 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { interiorImages } from '@/mocks/menu';
-import interior1 from '../assets/use/interior1.jpg';
-import reservationback from '../assets/use/reservationback.jpg';
-import interior2 from '../assets/use/interior2.jpg';
-import interior3 from '../assets/use/interior3.jpg';
+import interior1 from '../../../assets/use/interior1.jpg';
+import reservationback from '../../../assets/use/reservationback.jpg';
+import interior2 from '../../../assets/use/interior2.jpg';
+import interior3 from '../../../assets/use/interior3.jpg';
 
 const interiorPhotos = [interior1, reservationback, interior2, interior3];
 const marqueePhotos = [...interiorPhotos, ...interiorPhotos];

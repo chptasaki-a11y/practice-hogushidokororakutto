@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import reservationBack from '../assets/ほぐし処らくっと素材/使う素材/reservationback.jpg';
+import reservationBack from '../../../assets/use/reservationback.jpg';
 
 export default function ReservationSection() {
   const { ref, isVisible } = useScrollAnimation(0.1);

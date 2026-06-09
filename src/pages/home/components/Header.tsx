@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import logo from '../assets/ほぐし処らくっと素材/使う素材/logo.png';
+import logo from '../../../assets/use/logo.png';
 
 const navLinks = [
 

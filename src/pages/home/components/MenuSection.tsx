@@ -1,7 +1,7 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import menuCard1 from '../assets/ほぐし処らくっと素材/使う素材/menucard1.png';
-import menuCard2 from '../assets/ほぐし処らくっと素材/使う素材/menucard2.png';
-import tabHero from '../assets/ほぐし処らくっと素材/使う素材/tab-hero.png';
+import menuCard1 from '../../../assets/use/menucard1.png';
+import menuCard2 from '../../../assets/use/menucard2.png';
+import tabHero from '../../../assets/use/tab-hero.png';
 
 const menuCards = [
   {

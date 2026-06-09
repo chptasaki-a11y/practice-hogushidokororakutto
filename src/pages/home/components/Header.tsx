@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logo from '../assets/ほぐし処らくっと素材/使う素材/logo.png';
 
 const navLinks = [
 
@@ -45,16 +46,8 @@ export default function Header() {
             onClick={() => scrollToSection('hero')}
             className="flex items-center gap-2 cursor-pointer group"
           >
-            <span className="w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center flex-shrink-0">
-              <i className="ri-leaf-line text-background-50 text-sm"></i>
-            </span>
-            <span
-              className={`text-sm md:text-base font-heading font-bold tracking-wider whitespace-nowrap transition-colors duration-300 ${
-                scrolled ? 'text-foreground-900' : 'text-foreground-900'
-              }`}
-            >
-              ほぐし処らくっと
-            </span>
+            <img src={logo} alt="ほぐし処らくっと" className="w-14 h-14" />
+         
           </button>
 
           {/* Desktop Nav */}

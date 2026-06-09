@@ -16,7 +16,7 @@ export default function HeroSection() {
     <section
   ref={ref}
   id="hero"
- className="relative w-full min-h-screen md:min-h-[130vh] overflow-hidden"
+ className="relative w-full min-h-screen md:min-h-[100dvh] overflow-hidden"
 >
  {/* Background image */}
 <div className="absolute inset-0">

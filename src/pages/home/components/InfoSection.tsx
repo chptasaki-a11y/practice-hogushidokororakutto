@@ -7,22 +7,22 @@ export default function InfoSection() {
   const infoAnim = useScrollAnimation(0.1);
 
   return (
-    <section id="info" className="relative w-full bg-background-50">
+    <section id="info" className="relative w-full bg-background-50 p-12">
 
-      <div className="w-full flex flex-col lg:flex-row">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row">
         {/* Left - Map/Image Area */}
         <div
           ref={imageAnim.ref}
-          className={`lg:w-1/2 relative min-h-[400px] lg:min-h-[600px] overflow-hidden transition-all duration-1000 ease-out ${imageAnim.isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'
+          className={`md:w-1/2 relative min-h-[300px] md:min-h-0 overflow-hidden transition-all duration-1000 ease-out ${imageAnim.isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-16'
             }`}
         >
           <img
             src={gaikan2}
             alt="ほぐし処らくっと 外観"
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="absolute inset-0 w-full h-full object-cover object-center rounded-2xl"
           />
 
-          <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-white/45 to-transparent flex flex-col justify-end p-8 md:p-12">
+          <div className="absolute inset-0  pointer-events-none bg-gradient-to-r from-white/45 to-transparent flex flex-col justify-end p-8 md:p-12">
 
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function InfoSection() {
         {/* Right - Info Area */}
         <div
           ref={infoAnim.ref}
-          className={`lg:w-1/2 bg-background-50 px-6 md:px-10 lg:px-16 py-12 md:py-16 flex flex-col justify-center transition-all duration-1000 delay-200 ease-out ${infoAnim.isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'
+          className={`md:w-1/2 bg-background-50 px-6 md:px-8 lg:px-16 py-12 md:py-14 lg:py-16  flex flex-col justify-center transition-all duration-1000 delay-200 ease-out ${infoAnim.isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'
             }`}
         >
           <p className="text-xs tracking-[0.3em] text-accent-500 font-sans mb-3 text-center lg:text-left">
@@ -56,7 +56,7 @@ export default function InfoSection() {
                   10:00 〜 21:00（最終受付 20:00）
                   <br />
                   <span className="text-xs text-foreground-400">
-                    ※※メニューによっては20時受付可能な場合がありますので、お気軽にお問合せください
+                    ※メニューによっては20時受付可能な場合がありますので、<br />お気軽にお問合せください
                   </span>
                 </p>
               </div>

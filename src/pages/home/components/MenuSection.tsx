@@ -63,9 +63,6 @@ export default function MenuSection() {
               人気メニュー
             </h2>
           </div>
-          <p className="text-sm text-foreground-500 font-sans mt-3">
-            上質な時間をお過ごしください
-          </p>
         </div>
 
         {/* Cards */}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logo from '../assets/ほぐし処らくっと素材/使う素材/logo.png';
 
 interface NameRevealProps {
   onComplete: () => void;
@@ -33,15 +34,7 @@ export default function NameReveal({ onComplete }: NameRevealProps) {
               : ''
           }`}
         >
-          <p className="text-sm tracking-[0.3em] text-primary-400 font-sans mb-6">
-            RELAXATION SALON
-          </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-800 tracking-wider">
-            ほぐし処
-            <span className="block mt-2 text-5xl md:text-6xl lg:text-7xl text-primary-600">
-              らくっと
-            </span>
-          </h1>
+          <img src={logo} alt="ほぐし処らくっと" className="w-64 h-64 h-auto mx-auto" />
           <div className="mt-8 decorative-line w-48 mx-auto"></div>
         </div>
       </div>

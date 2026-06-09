@@ -13,9 +13,9 @@ export default function FooterSection() {
   return (
     <footer
   ref={ref}
-  className="relative w-full bg-foreground-800"
+  className="relative w-full bg-primary-400"
 >
-      <div className="max-w-6xl mx-auto px-4 md:px-6 py-16 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-6">
         <div className={`flex flex-col lg:flex-row gap-12 lg:gap-16 ${isVisible ? 'reveal visible' : 'reveal'}`}>
           {/* Left - Brand */}
           <div className="w-full lg:w-[28%]">
@@ -131,7 +131,7 @@ export default function FooterSection() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-background-50/15 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-12 pt-6 border-t border-background-50/15 flex flex-col sm:flex-row items-center justify-center gap-4">
           <p className="text-xs text-background-50/40 font-sans">
             &copy; 2026 ほぐし処らくっと. All Rights Reserved.
           </p>

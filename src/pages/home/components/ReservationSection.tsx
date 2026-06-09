@@ -17,7 +17,7 @@ export default function ReservationSection() {
           alt=""
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-800/85 via-primary-800/70 to-primary-800/85"></div>
+        <div className="absolute inset-0 bg-foreground-950/80"></div>
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6 text-center">

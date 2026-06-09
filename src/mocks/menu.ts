@@ -49,7 +49,7 @@ export const popularMenus = [
 export const interiorImages = [
   {
     id: 1,
-    title: '施術スペース',
+    title: '受付',
     description: '落ち着いた和の空間で、ゆったりと施術を受けていただけます。',
     imageQuery: 'Japanese%20massage%20treatment%20room%20with%20tatami%20and%20cream%20linens%2C%20soft%20indirect%20lighting%2C%20wooden%20sliding%20doors%2C%20minimal%20zen%20aesthetic%2C%20warm%20beige%20tones%2C%20serene%20professional%20spa%20interior%2C%20clean%20and%20peaceful%20atmosphere',
     imageSeq: 'interior-treatment',
@@ -63,7 +63,14 @@ export const interiorImages = [
   },
   {
     id: 3,
-    title: '受付・玄関',
+    title: '施術スペース',
+    description: '温かみのあるお出迎え。和モダンな玄関で皆様をお迎えします。',
+    imageQuery: 'Japanese%20wellness%20spa%20entrance%20with%20noren%20curtain%2C%20wooden%20reception%20desk%2C%20warm%20indirect%20lighting%2C%20minimal%20zen%20aesthetic%2C%20cream%20walls%2C%20clean%20and%20inviting%20atmosphere%2C%20professional%20storefront',
+    imageSeq: 'interior-entrance',
+  },
+  {
+    id: 4,
+    title: '施術スペース',
     description: '温かみのあるお出迎え。和モダンな玄関で皆様をお迎えします。',
     imageQuery: 'Japanese%20wellness%20spa%20entrance%20with%20noren%20curtain%2C%20wooden%20reception%20desk%2C%20warm%20indirect%20lighting%2C%20minimal%20zen%20aesthetic%2C%20cream%20walls%2C%20clean%20and%20inviting%20atmosphere%2C%20professional%20storefront',
     imageSeq: 'interior-entrance',
